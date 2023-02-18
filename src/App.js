@@ -1,24 +1,58 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Button from './Components/Button';
+import Breadcrumbs, { Crumb } from './Components/Breadcrumbs';
+import ProgressBar from './Components/ProgressBar';
+import Select from './Components/Select';
+import IconInput from './Components/IconInput';
+
+import styled from 'styled-components/macro';
+import GlobalStyles from './GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <IconInput id='search' />
+      {/* <Select /> */}
+      {/* <ProgressBar /> */}
+
+      {/* <Breadcrumbs>
+        <Crumb href='/'>Home</Crumb>
+        <Crumb href='/living'>Living Room</Crumb>
+        <Crumb href='/living/couch'>Couches</Crumb>
+        <Crumb href='/living/couch/sectional' isCurrentPage={true}>
+          Sectionals
+        </Crumb>
+      </Breadcrumbs>
+      <Button size='small' variant='fill'>
+        Button
+      </Button>
+      <Button size='medium' variant='fill'>
+        Button
+      </Button>
+      <Button size='large' variant='fill'>
+        Button
+      </Button>
+      <Button size='small' variant='outline'>
+        Button
+      </Button>
+      <Button size='medium' variant='outline'>
+        Button
+      </Button>
+      <Button size='large' variant='outline'>
+        Button
+      </Button>
+      <Button size='small' variant='ghost'>
+        Button
+      </Button>
+      <Button size='medium' variant='ghost'>
+        Button
+      </Button>
+      <Button size='large' variant='ghost'>
+        Button
+      </Button> */}
+      <GlobalStyles />
+    </>
   );
 }
 
